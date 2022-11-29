@@ -37,6 +37,9 @@ https://codechacha.com/ko/java-concurrentmodificationexception/ <br>
 ■ Maven project 만드는 법
 자바 프로젝트 하나 만들고 그거를 Maven으로 convert해라.
 
+■ @Qualifier
+니가 서비스단에서 dao를 2개 이상 쓰고 싶으면 필드 앞에다가 @Qualifier("연결하고 싶은 이름")을 쓰고, 그 다음 그 연결할 Repo에도 Repository("연결하고 싶은 이름")을 달아라.
+
 # troubleshoot
 class 위에 @restcontroller를 빼먹으면 not found, 못 찾는다.
 
