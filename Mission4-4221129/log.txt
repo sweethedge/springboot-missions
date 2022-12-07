@@ -1,0 +1,20 @@
+get,select * from member order by id,true
+get,select * from member where id = ?,true
+post,insert into member (id, pass, name) values (?, ?, ?),true
+put,update member set pass=?, name=? where id=?,true
+delete,delete from member where id=?,true
+get,select * from member order by id,true
+get,select * from member where id = ?,true
+post,insert into member (id, pass, name) values (?, ?, ?),true
+put,update member set pass=?, name=? where id=?,true
+delete,delete from member where id=?,true
+get,select * from member order by id,true
+get,select * from member where id = ?,true
+post,insert into member (id, pass, name) values (?, ?, ?),true
+put,update member set pass=?, name=? where id=?,true
+delete,delete from member where id=?,true
+get,select * from member order by id,true
+get,select * from member where id = ?,true
+get,insert into member (id, pass, name) values (?, ?, ?),true
+get,update member set pass=?, name=? where id=?,true
+get,delete from member where id=?,true
