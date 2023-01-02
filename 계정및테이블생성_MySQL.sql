@@ -6,8 +6,8 @@ drop table if exists member;
 drop table if exists board;
 
 create table member (
-    id varchar(10) not null primary key,
-    pass varchar(10) not null,
+    id varchar(100) not null primary key,
+    pass varchar(100) not null,
     name varchar(30) not null,
     regidate timestamp default current_timestamp not null
 );
