@@ -1,5 +1,37 @@
 # springboot-missions
 
+■ 100번은 한 것같은데 이것도 3주 지난다고 좀 생경해진다.
+1. 일단 sql로 db를 만들어야 된다. mysql로 적절하게 만들었다고 치고
+2. dao 짜라.
+3. controller 만들고 @restcontroller 쓰고 MemberService로 넘겨라.
+4. MemberService에서는 일단 MemberDao로 넘겨라.
+5. Dao로 왔으면 생성자에서 Class.forname으로 드라이버 깔고
+6. 각 메서드에서는 일단 List부터 만들어라.
+7. 그다음 query = ""; 입력하고
+8. psmt = 로 문구 준비하고
+9. rs에 담아서
+10 rs.next()가 있는 동안
+11 MemberVO m 인스턴스화를 해서
+12 m.set 어쩌구 해서 list에 add
+
+1 서비스에서 list 만드는 거는
+2 생성자에서 니가 반복문 돌면서 list에 add하고
+3. getMember
+List하나 더 파서 list1을 만들고
+list를 돌면서 id랑 같으면 list1에 add
+4. addMember
+postman에 있는 memberVO를 add
+regidate만 new date로
+5. updateMember
+반복문을 돌면서 같으면 m.setPass/setName
+6. deleteMember
+반복문을 돌면서 같으면 list.remove(m)
+
+@ 이렇게 인터넷에 줄줄이 쓰는게 초보인거 드러내는 거 같고 하지만 뭐..
+@ 초보 맞으니까.
+@ 못하는 것보다는 훨씬 낫지 않을까?
+
+
 미션1
 controller에서 메서드를 던져주면 service에서 list를 만들어서 브라우저에 json타입으로 보여준다.
 
